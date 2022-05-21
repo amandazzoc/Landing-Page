@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+html
+{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body
+{
+    margin: 0;
+    background-color: aqua;
+    font-family:'Bree Serif', serif;
+    width: 100vw;
+}
+header nav ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 0px;
+}
+header nav ul li
+{
+    margin: 0 15px;
+    color: white;
+}
+header nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+header nav img
+{
+    max-width: 40px;
+}
+header
+{
+    height: calc(100vh - 150px);
+    background:linear-gradient(rgba(54, 54, 54, 0.75),rgba(75, 75, 75, 0.75)), url('../imgs/Fisio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .texto_header
+{
+    color: white;
+    max-width: 500px;
+    margin: 150px auto;
+    text-align: center;
+    font-size: 22px
+}
+header nav ul li a
+{
+    text-decoration: none;
+    color: inherit;
+}
+section #sobre
+{
+    position: relative;
+    margin: 0;
+    height: 500px;
+    background-color: #e5f3ec;
+}
+section #sobre .titulo_sobre
+{
+    position: relative;
+    margin-left: 80px;
+    margin-right: 1289px;
+    top: 20px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+section #sobre .entrevista
+{
+    position: relative;
+    margin-left: 900px;
+    margin-right: 80px;
+    height: 300px;
+    top: -150px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+section #MT
+{
+    
+    position: relative;
+    margin: 0;
+    height: 500px;
+    background-color: #c7eedb;
+}
+section #MT .titulo_MT
+{
+    position: relative;
+    margin-left: 80px;
+    margin-right: 1090px;
+    top: 20px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+.circulo {
+    position: relative;
+    margin-left: 110px;
+    margin-right: 1289px;
+    top: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: #77EEB7;
+}
+.titulo
+{
+    position: relative;
+    margin-left: 130px;
+    margin-right:700px;
+    top: -9px;
+}
+
+
+section #MT .square
+{
+    position: relative;
+    border-radius: 10% 0;
+    margin-left: 1000px;
+    margin-right: 150px;
+    height: 240px;
+    top: -280px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+section #MT .square #profissional img
+{
+    position: relative;
+    animation: mov-div 5s infinite;
+}
+@keyframes mov-div {
+    from {top:100px ;right: 0px;}
+    to {top:-280px;right: 150px;}  
+}
+
+section #Facul
+{
+    
+    position: relative;
+    margin: 0;
+    height: 1600px;
+    background-color: #9cccb5;
+}
+section #Facul .titulo_Facul
+{
+    position: relative;
+    margin-left: 80px;
+    margin-right: 1200px;
+    top: 20px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+section #Facul .cards
+{
+    
+    display:flex;
+    margin-top: 25px;
+}
+section #Facul .cards .card .card_image img
+{
+    margin-left: 50px;
+    position: relative;
+    max-height: 118px;
+    max-width: 199px;
+}
+
+section #Facul .cards .card
+{
+    position: relative;
+    height: 250px;
+    width: 230px;
+    margin: 20px auto;
+    align-items: center;
+}
+section #Facul .cards .card .card-content h3
+{
+    text-align: center;
+}
+section #Facul .cards .card .card-content p{
+    text-align: center;
+}
+
+
+
+.container
+{
+    max-width: 1170px;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul
+{
+    list-style: none;
+}
+.footer
+{
+    position: relative;
+    background-color: #C7CED7;
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.footer-col
+{
+    
+    width: 15%;
+    padding: 0 15px;
+}
+.footer-col h4
+{
+    font-size: 18px;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #000000;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a
+{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #555353;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover
+{
+    color: #555353;
+    padding-left: 8px;
+}
+.footer-col .social-links a
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #817d7d33;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #5c5a5a;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover
+{
+    color: #918e8e;
+    background-color: #000000;
+}
+
+@media(max-width: 767px)
+{
+
+}

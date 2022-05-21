@@ -1,0 +1,4 @@
+USP
+https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=5&codcur=5052&codhab=0&tipo=N
+UFMG
+https://ufmg.br/cursos/graduacao/2414/91227
