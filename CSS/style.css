@@ -7,7 +7,6 @@ html
 body
 {
     margin: 0;
-    background-color: aqua;
     font-family:'Bree Serif', serif;
     width: 100vw;
 }
@@ -53,6 +52,8 @@ header nav ul li a
 {
     text-decoration: none;
     color: inherit;
+    transform: 2ms ease-in;
+    position: relative;
 }
 section #sobre
 {
@@ -106,7 +107,7 @@ section #MT .titulo_MT
     display: inline-block;
     height: 10px;
     width: 10px;
-    background-color: #77EEB7;
+    background-color: #509776;
 }
 .titulo
 {
@@ -115,8 +116,6 @@ section #MT .titulo_MT
     margin-right:700px;
     top: -9px;
 }
-
-
 section #MT .square
 {
     position: relative;
@@ -137,14 +136,13 @@ section #MT .square #profissional img
     from {top:100px ;right: 0px;}
     to {top:-280px;right: 150px;}  
 }
-
 section #Facul
 {
     
     position: relative;
     margin: 0;
-    height: 1600px;
-    background-color: #9cccb5;
+    height: 1200px;
+    background-color: #c1e7d5;
 }
 section #Facul .titulo_Facul
 {
@@ -168,7 +166,6 @@ section #Facul .cards .card .card_image img
     max-height: 118px;
     max-width: 199px;
 }
-
 section #Facul .cards .card
 {
     position: relative;
@@ -184,9 +181,32 @@ section #Facul .cards .card .card-content h3
 section #Facul .cards .card .card-content p{
     text-align: center;
 }
-
-
-
+section #Pos
+{
+    position: relative;
+    margin: 0;
+    height: 500px;
+    background-color: #b2d8c6;
+}
+section #Pos .titulo_pos
+{
+    position: relative;
+    margin-left: 80px;
+    margin-right: 1150px;
+    top: 20px;
+    background-color:#77EEB7;
+    font-size: 26px;
+}
+section #Pos .lista
+{
+    margin-top: -15px;
+    margin-left: 120px;
+    margin-right: 1100px;
+}
+section #Pos .lista ul li
+{
+    list-style-type: circle;
+}
 .container
 {
     max-width: 1170px;
@@ -274,7 +294,6 @@ ul
     color: #918e8e;
     background-color: #000000;
 }
-
 @media(max-width: 767px)
 {
 
