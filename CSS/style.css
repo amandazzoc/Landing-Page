@@ -165,6 +165,16 @@ section #Facul .cards .card .card_image img
     position: relative;
     max-height: 118px;
     max-width: 199px;
+    transition: all .2s ease-in-out
+}
+section #Facul .cards .card .card_image .move
+{
+    transition: all .2s ease-in-out
+}
+section #Facul .cards .card .card_image .move:hover
+{
+    top:-4px;
+    padding-left: 8px;
 }
 section #Facul .cards .card
 {
@@ -178,9 +188,7 @@ section #Facul .cards .card .card-content h3
 {
     text-align: center;
 }
-section #Facul .cards .card .card-content p{
-    text-align: center;
-}
+
 section #Pos
 {
     position: relative;

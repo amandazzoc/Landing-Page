@@ -1,21 +1,3 @@
-para linkar nas universidades 
-USP
-https://uspdigital.usp.br/jupiterweb/listarGradeCurricular?codcg=5&codcur=5052&codhab=0&tipo=N
-UFMG
-https://ufmg.br/cursos/graduacao/2414/91227
-UNB
-http://fce.unb.br/graduacao/fisioterapia
-UFSCAR
-http://www.dfisio.ufscar.br/graduacao/
-UNESP
-https://www.fct.unesp.br/#!/graduacao/fisioterapia/apresentacao/
-UNISA
-https://www.unisa.br/cursos/graduacao/fisioterapia/
-UNOPAR
-https://www.unopar.com.br/curso/fisioterapia-bacharelado/?gclsrc=aw.ds&&gclid=Cj0KCQjwm6KUBhC3ARIsACIwxBiuEh_SSO1Xn_JbHmm0-hbP2Rmwef-8xFgOr7Guxr_9laHAiamasZsaAvdlEALw_wcB
-UNIP
-https://www.unip.br/cursos/graduacao/tradicionais/fisioterapia.aspx
-
 
 campos da fisioterapia
 https://www.florence.edu.br/blog/areas-da-fisioterapia/
