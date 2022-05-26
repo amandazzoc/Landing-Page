@@ -10,26 +10,27 @@ body
     font-family:'Bree Serif', serif;
     width: 100vw;
 }
-header nav ul
+nav ul
 {
     list-style: none;
     display: flex;
     flex-direction: row;
-    position: fixed;
     right: 0px;
+    margin-left: 750px;
 }
-header nav ul li
+nav ul li
 {
     margin: 0 15px;
     color: white;
 }
-header nav
+nav
 {
-    display: flex;
+    
     justify-content: space-between;
     margin: auto 30px;
+    position: fixed;
 }
-header nav img
+header img
 {
     max-width: 40px;
 }
@@ -48,13 +49,27 @@ header .texto_header
     text-align: center;
     font-size: 22px
 }
-header nav ul li a
+body nav ul li a
 {
     text-decoration: none;
     color: inherit;
     transform: 2ms ease-in;
     position: relative;
 }
+nav a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color:rgb(255, 255, 255);
+    margin: 2px;
+    display: block;
+}
+nav a:hover::after{
+    width: 100%;
+    transition: width 0.5s ease;
+    margin-top: 0px;
+}
+
 section #sobre
 {
     position: relative;
@@ -188,7 +203,10 @@ section #Facul .cards .card .card-content h3
 {
     text-align: center;
 }
-
+section #Facul .cards .card .card-content p
+{
+    text-align: center;
+}
 section #Pos
 {
     position: relative;
@@ -214,6 +232,37 @@ section #Pos .lista
 section #Pos .lista ul li
 {
     list-style-type: circle;
+}
+section #Pos .carrossel
+{
+    position: relative;
+    margin-left: 900px;
+    margin-right: 80px;
+    height: 350px;
+    top: -350px;
+    overflow: hidden;
+}
+section #Pos .carrossel .fotos
+{
+    
+    width: 500%;
+    animation: animacao 15s infinite;
+}
+section #Pos .carrossel .fotos img
+{
+
+    width: 19.8%;
+}
+@keyframes animacao {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    1000%{margin-left: -400%;}
 }
 .container
 {
