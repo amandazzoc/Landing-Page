@@ -16,19 +16,22 @@ nav ul
     display: flex;
     flex-direction: row;
     right: 0px;
-    margin-left: 750px;
+    margin-left: 823px;
+    
 }
 nav ul li
 {
-    margin: 0 15px;
-    color: white;
+    margin: -7px 15px;
+    color: rgb(0, 0, 0);
 }
 nav
 {
     display: flex;
     justify-content: space-between;
-    margin: auto 30px;
+    width: 100%;
+    height: 5%;
     position: fixed;
+    z-index: 5;
 }
 header img
 {
