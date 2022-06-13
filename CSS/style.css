@@ -200,13 +200,13 @@ section #Facul .cards .card .card_image img
 }
 section #Facul .cards .card .card_image .move
 {
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    transform: scale(1.1)
 }
 section #Facul .cards .card .card_image .move:hover
 {
-    top:-6px;
-    padding-left: 8px;
-    
+    transition: all .2s ease-in-out;
+    transform: scale(1.2)
 }
 section #Facul .cards .card
 {
