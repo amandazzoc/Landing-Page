@@ -6,13 +6,37 @@ html
     /*esconder a barra debaixo*/
     overflow-x: hidden;
 }
+
 body
 {
     margin: 0;
+    padding-bottom: 0px;
+    background-color: #000000;
     font-family:'Bree Serif', serif;
     width: 100vw;
 }
 
+ /* Design do scrollbar*/
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* scroll */
+::-webkit-scrollbar-track {
+    background: #e5f3ec;
+    border-radius: 5px;
+}
+
+/* cor do scrool */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* cor do scrool quando passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(93, 109, 98);
+}
 nav
 {
     /*cor do menu*/
@@ -51,6 +75,7 @@ header img
 header
 {
     height: calc(100vh - 150px);
+    /*escurecer a imagem*/
     background:linear-gradient(rgba(54, 54, 54, 0.75),rgba(75, 75, 75, 0.75)), url('../imgs/Fisio.jpg');
     background-repeat: no-repeat;
     /*cobre todo o fundo*/
@@ -90,9 +115,43 @@ section #sobre
 {
     position: relative;
     margin: 0;
-    height: 500px;
+    height: 700px;
     background-color: #e5f3ec;
 }
+/*começo animação do carrossel*/
+section #sobre .carrossel
+{
+    position: absolute;
+    margin-left: 65%;
+    margin-right: 4%;
+    height: 200%;
+    top: 60px;
+    overflow: hidden;
+}
+
+section #sobre .carrossel .fotos
+{
+    
+    width: 500%;
+    animation: animacao 15s infinite;
+}
+section #sobre .carrossel .fotos img
+{
+
+    width: 19.8%;
+}
+@keyframes animacao {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+    1000%{margin-left: -400%;}
+}
+/*fim*/
 /*textos*/
 section .text
 {
@@ -101,9 +160,9 @@ section .text
     margin-right: 40%;
     font-size: 25px;
 }
-
 section #MT .text ul li
 {
+    /*quadradinho como lista*/
     list-style-type: square;
 }
 
@@ -118,11 +177,10 @@ section #sobre .titulo_sobre
 }
 section #sobre .entrevista
 {
-    position: relative;
-    margin-left: 900px;
-    margin-right: 80px;
+    position: absolute;
+    margin-left: 250px;
     height: 300px;
-    top: -200px;
+    top: 45%;
     background-color:#77EEB7;
     font-size: 26px;
     box-shadow: 5px 5px 8px rgb(126, 126, 126);
@@ -132,7 +190,7 @@ section #MT
     
     position: relative;
     margin: 0;
-    height: 900px;
+    height: 1300px;
     background-color: #c7eedb;
 }
 
@@ -151,6 +209,7 @@ section #MT .titulo_MT
     margin-left: 110px;
     margin-right: 1289px;
     top: 40px;
+    /*arredonda a borada*/
     border-radius: 50%;
     display: inline-block;
     height: 10px;
@@ -168,15 +227,16 @@ section #MT .titulo_MT
 
 section #MT .square
 {
-    position: relative;
+    position: absolute;
     border-radius: 10% 0;
-    margin-left: 1000px;
-    margin-right: 150px;
+    margin-left: 70%;
     height: 240px;
-    top: -280px;
+    width: 300px;
+    top: 50%;
     background-color:#77EEB7;
     font-size: 26px;
 }
+/*começo imagem subir*/
 section #MT .square #profissional img
 {
     position: relative;
@@ -186,12 +246,12 @@ section #MT .square #profissional img
     from {top:100px ;right: 0px;}
     to {top:-280px;right: 150px;}  
 }
+/*fim*/
 section #Facul
 {
-    
     position: relative;
     margin: 0;
-    height: 1200px;
+    height: 1700px;
     background-color: #c1e7d5;
 }
 section #Facul .titulo_Facul
@@ -247,7 +307,7 @@ section #Pos
 {
     position: relative;
     margin: 0;
-    height: 500px;
+    height: 900px;
     background-color: #b2d8c6;
 }
 section #Pos .titulo_pos
@@ -259,6 +319,11 @@ section #Pos .titulo_pos
     background-color:#77EEB7;
     font-size: 26px;
 }
+section #Pos .SubTitulo
+{
+    position: relative;
+    
+}
 section #Pos .lista
 {
     margin-top: -15px;
@@ -269,36 +334,12 @@ section #Pos .lista ul li
 {
     list-style-type: circle;
 }
-section #Pos .carrossel
-{
-    position: relative;
-    margin-left: 900px;
-    margin-right: 80px;
-    height: 350px;
-    top: -350px;
-    overflow: hidden;
-}
-section #Pos .carrossel .fotos
-{
-    
-    width: 500%;
-    animation: animacao 15s infinite;
-}
-section #Pos .carrossel .fotos img
-{
 
-    width: 19.8%;
-}
-@keyframes animacao {
-    0%{margin-left: 0;}
-    20%{margin-left: 0;}
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-    75%{margin-left: -300%;}
-    95%{margin-left: -300%;}
-    1000%{margin-left: -400%;}
+section #Pos #gif
+{
+    position: absolute;
+    top: 50px;
+    margin-left: 65%;
 }
 .container
 {
